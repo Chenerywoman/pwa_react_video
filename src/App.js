@@ -5,6 +5,11 @@ import { fetchWeather } from './api/fetchWeather';
 
 const App = () => {
 
+  // navigator.serviceWorker.getRegistrations().then(function(registrations) {
+  //   for(let registration of registrations) {
+  //    registration.unregister()
+  //  } })
+
   const [query, setQuery] = useState('');
   const [weather, setWeather] = useState({});
 
