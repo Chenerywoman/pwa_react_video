@@ -5,10 +5,13 @@ import { fetchWeather } from './api/fetchWeather';
 
 const App = () => {
 
-  // navigator.serviceWorker.getRegistrations().then(function(registrations) {
-  //   for(let registration of registrations) {
-  //    registration.unregister()
-  //  } })
+  /* This code needs to be run to unregister service worker & stop PWA permanently running on localhost://3000 */
+  /* 
+  navigator.serviceWorker.getRegistrations().then(function(registrations) {
+    for(let registration of registrations) {
+     registration.unregister()
+   } })
+   */
 
   const [query, setQuery] = useState('');
   const [weather, setWeather] = useState({});
